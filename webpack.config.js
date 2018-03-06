@@ -57,12 +57,19 @@ module.exports = {
             }
           },
         ],
+      },
+      {
+        test: /\.pug$/, 
+        use: {
+          loader: 'pug-loader',
+          query: {} // Can be empty
+        }
       }
     ]
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
+      template: "./src/index.pug",
       filename: "./index.html"
     }),
     new ExtractTextPlugin('[name].css')
