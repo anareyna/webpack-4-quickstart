@@ -1,14 +1,12 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-const extractStyles = new ExtractTextPlugin('[name].css')
-
 module.exports = {
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use: extractStyles.extract({
+        use: ExtractTextPlugin.extract({
           use: ['css-loader', 'sass-loader'],
           fallback: 'style-loader',
           allChunks: true
@@ -67,6 +65,6 @@ module.exports = {
       template: "./src/index.html",
       filename: "./index.html"
     }),
-    extractStyles
+    new ExtractTextPlugin('[name].css')
   ]
 };
