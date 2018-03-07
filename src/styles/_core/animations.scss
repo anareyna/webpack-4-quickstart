@@ -1,0 +1,14 @@
+.pulse-animation {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: pulse;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse {
+    0%  { transform: scale(1); }
+    25% { transform: scale(1.04); }
+    40% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+  

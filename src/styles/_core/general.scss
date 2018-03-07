@@ -1,0 +1,11 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  @if $debug {
+    outline: 1px solid rgba(255, 0, 0, 0.1)
+  }
+}
+
+body {
+  font-family: $family-default;
+  margin-top: 90px;
+}

@@ -1,0 +1,35 @@
+@import '~breakpoint-sass';
+@import '~breakpoint-slicer';
+
+@import '_core/variables.scss';
+@import '_core/mixins.scss';
+@import '_core/normalize.scss';
+@import '_core/general.scss';
+@import '_core/animations.scss';
+
+@import '_elements/btn.scss';
+@import '_elements/link.scss';
+@import '_elements/title.scss';
+
+@import '_components/header.scss';
+@import '_components/container.scss';
+@import '_components/main-section.scss';
+@import '_components/top-companies.scss';
+@import '_components/top-brand.scss';
+
+
+body {
+    @include tablet {
+        color: red;
+    }
+    @include mobile {
+        color: green;
+    }
+}
+
+
+.row--flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

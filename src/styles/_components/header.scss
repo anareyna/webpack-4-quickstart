@@ -1,0 +1,21 @@
+.header {
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background: white;
+    top: 0;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__ca-logo-link {
+    max-width: 360px;
+    display: block;
+    margin-right: 100px;
+}
+.header__ca-logo {
+     width: 100%;
+}

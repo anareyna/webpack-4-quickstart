@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const WebpackNotifierPlugin = require('webpack-notifier')
 
 module.exports = {
   module: {
@@ -69,9 +70,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/index.pug",
+      template: "./src/markup/index.pug",
       filename: "./index.html"
     }),
-    new ExtractTextPlugin('[name].css')
+    new ExtractTextPlugin('[name].css'),
+    new WebpackNotifierPlugin({
+      alwaysNotify: true,
+      skipFirstNotification: true
+    }),
   ]
 };
