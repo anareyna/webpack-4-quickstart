@@ -11,7 +11,7 @@
 }
 
 @mixin from-tablet() {
-    @include from('m') {
+    @include from('s') {
         @content
     }
 }
