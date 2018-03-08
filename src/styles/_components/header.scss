@@ -5,6 +5,9 @@
     z-index: 1;
     background-color: whitesmoke;
     top: 0;
+    @include mobile {
+        background-color: red
+    }    
 }
 .header .container {
     display: flex;
@@ -31,7 +34,7 @@
 }
 
 
-@include from-tablet {
+@include tablet {
     .header {
         background-color: white;
     }

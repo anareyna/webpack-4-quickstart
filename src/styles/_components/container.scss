@@ -5,13 +5,13 @@
     padding: 0 1rem;
 }
 
-@include from-tablet {
+@include tablet {
     .container {
         max-width: $wrapper-width;
     }
 }
 
-@include from('xl') {
+@include fullhd {
     .container {
         padding: 0;
     }

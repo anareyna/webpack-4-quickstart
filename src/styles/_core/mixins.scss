@@ -1,17 +1,47 @@
 @mixin mobile() {
-    @include at('xs') {
+    @include to('s') {
         @content
     }
 }
 
 @mixin tablet() {
+    @include from('s') {
+        @content
+    }
+}
+
+@mixin desktop() {
+    @include from('m') {
+        @content
+    }
+}
+
+@mixin widescreen() {
+    @include from('l') {
+        @content
+    }
+}
+
+@mixin fullhd() {
+    @include from('xl') {
+        @content
+    }
+}
+
+@mixin tablet-only() {
     @include between('s', 'm') {
         @content
     }
 }
 
-@mixin from-tablet() {
-    @include from('s') {
+@mixin desktop-only() {
+    @include between('m', 'l') {
+        @content
+    }
+}
+
+@mixin widescreen-only() {
+    @include between('l', 'xl') {
         @content
     }
 }

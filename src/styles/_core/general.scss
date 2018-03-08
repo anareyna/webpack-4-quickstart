@@ -10,7 +10,7 @@ body {
   margin-top: 50px;
 }
 
-@include from-tablet {
+@include tablet {
   body {
     margin-top: 90px;
   }

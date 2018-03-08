@@ -64,16 +64,11 @@
     display: none;
 }
 
-// .top-brand__cta-btn {
-//     display: none;
-// }
-
 .top-brand__cta-link {
     margin-top: 15px;
 }
 
-
-@include from-tablet {
+@include tablet {
     .top-brand {
         align-items: center;
         justify-content: space-between;

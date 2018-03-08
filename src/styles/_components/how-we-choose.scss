@@ -31,7 +31,7 @@
     margin-bottom: 0;
 }
 
-@include from-tablet {
+@include tablet {
     .how-we-choose {
         text-align: center;
     }
