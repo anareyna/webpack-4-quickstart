@@ -10,7 +10,7 @@ body {
   margin-top: 50px;
 }
 
-@include from('m') {
+@include from-tablet {
   body {
     margin-top: 90px;
   }

@@ -64,16 +64,16 @@
     display: none;
 }
 
-.top-brand__cta-btn {
-    display: none;
-}
+// .top-brand__cta-btn {
+//     display: none;
+// }
 
 .top-brand__cta-link {
     margin-top: 15px;
 }
 
 
-@include from('m') {
+@include from-tablet {
     .top-brand {
         align-items: center;
         justify-content: space-between;
@@ -85,7 +85,4 @@
     .top-brand__call-text {
         display: initial;
     }
-    .top-brand__cta-btn {
-        display: initial;
-    }
-  }
+}

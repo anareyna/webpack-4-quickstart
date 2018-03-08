@@ -20,7 +20,7 @@
     display: block;
 }
 
-@include from('m') {
+@include from-tablet {
     .main-section {
         min-height: 480px;
         background-image: url('../assets/images/banner-bg.jpg');

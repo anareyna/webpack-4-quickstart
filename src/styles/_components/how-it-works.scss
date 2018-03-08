@@ -21,7 +21,7 @@
     line-height: 1.5;
 }
 
-@include from('m') {
+@include from-tablet {
     .how-it-works__title {
         text-align: center;
     }
