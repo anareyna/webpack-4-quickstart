@@ -7,5 +7,11 @@
 
 body {
   font-family: $family-default;
-  margin-top: 90px;
+  margin-top: 50px;
+}
+
+@include from('m') {
+  body {
+    margin-top: 90px;
+  }
 }

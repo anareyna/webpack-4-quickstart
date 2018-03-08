@@ -4,8 +4,7 @@
     background-repeat: no-repeat;
     box-shadow: 0px 0px 30px 0px rgba(0,40,225,0.15);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     position: relative;
     padding: 20px;
     margin-top: 25px;
@@ -22,7 +21,6 @@
 }
 
 .top-brand__main {
-    margin-left: 60px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -63,8 +61,31 @@
 .top-brand__call-text {
     font-weight: bold;
     font-size: 0.8rem;
+    display: none;
+}
+
+.top-brand__cta-btn {
+    display: none;
 }
 
 .top-brand__cta-link {
     margin-top: 15px;
 }
+
+
+@include from('m') {
+    .top-brand {
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;    
+    }
+    .top-brand__main {
+        margin-left: 60px;
+    }
+    .top-brand__call-text {
+        display: initial;
+    }
+    .top-brand__cta-btn {
+        display: initial;
+    }
+  }

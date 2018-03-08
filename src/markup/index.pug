@@ -3,21 +3,33 @@ block content
   section.main-section 
     .container 
       .main-section__text
-        h2.main-section__title 6 of the most trusted home alarm and security systems
+        h2.main-section__title 6 of the most trusted home alarm systems
         p.main-section__description You work hard to provide for your family and protect the ones you love. Installing a home security system is an easy way to secure your home even when you're not there. But how do you know which alarm company to use? We compared installation types, contract terms, monitoring fees and plan options to help you choose the best home security system for your needs.
         p.main-section__bottom-text Last updated: March 1, 2018 
           span.main-section__detail "Disclosure"
+  section.how-we-choose 
+    .container 
+      h3.how-we-choose__title How we choose the best
+      p.how-we-choose__description We throughly researched plans, reputation installation ans more...
+      .how-we-choose__boxes 
+        - for(var i = 0; i<4; i++)
+          .how-we-choose__box
+            span.how-we-choose__icon [icon]
+            .how-we-choose__box-details
+              p.how-we-choose__box-number 283
+              p.how-we-choose__box-description Companies considered
+        
   section.top-companies 
     .container 
-      p.top-companies__featured-text  Featured in: 
-      .top-companies__featured 
-        img.top-companies__featured-logo(src=require("../assets/images/travel-leisure-logo.png"))
-        img.top-companies__featured-logo(src=require("../assets/images/cnn-logo.png"))
-        img.top-companies__featured-logo(src=require("../assets/images/the-new-york-times-logo.png"))
-        img.top-companies__featured-logo(src=require("../assets/images/nbc-news-2013-logo.png"))
-        img.top-companies__featured-logo(src=require("../assets/images/the-washington-post-logo.png"))
-        img.top-companies__featured-logo(src=require("../assets/images/aarp-logo.png"))
-        img.top-companies__featured-logo(src=require("../assets/images/forbes-logo.png"))
+      //- p.top-companies__featured-text  Featured in: 
+      //- .top-companies__featured 
+      //-   img.top-companies__featured-logo(src=require("../assets/images/travel-leisure-logo.png"))
+      //-   img.top-companies__featured-logo(src=require("../assets/images/cnn-logo.png"))
+      //-   img.top-companies__featured-logo(src=require("../assets/images/the-new-york-times-logo.png"))
+      //-   img.top-companies__featured-logo(src=require("../assets/images/nbc-news-2013-logo.png"))
+      //-   img.top-companies__featured-logo(src=require("../assets/images/the-washington-post-logo.png"))
+      //-   img.top-companies__featured-logo(src=require("../assets/images/aarp-logo.png"))
+      //-   img.top-companies__featured-logo(src=require("../assets/images/forbes-logo.png"))
       
       h3.title Top 6 Home Alarm Companies 
 
@@ -40,21 +52,18 @@ block content
                   strong $39.99 per month
           .top-brand__cta
             p.top-brand__call-text Call Frontpoint 
-            a.btn.btn--large(href="javascript:;") (833) 851-3035
+            a.top-brand__cta-btn.btn.btn--large(href="javascript:;") (833) 851-3035
             a.top-brand__cta-link.link(href="javascript:;") Visit Website
-  section.trust 
+  section.how-it-works 
     .container 
-      h3.trust__title How do I know I can trust 
-        span.trust__brand-name ConsumerAffairs?
-        .row.row--flex
-          .box
-            p df
-          .box
-            p df
-          .box
-            p df
-          .box
-            p df
+      h3.how-it-works__title Here is how it works
+      .how-it-works__boxes 
+        - for(var i = 0; i<4; i++)
+          .how-it-works__box 
+            span.how-it-works__icon [check]
+            p.how-it-works__subtitle We listen 
+            p.how-it-works__description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta in ab maxime rem doloremque deserunt possimus laboriosam nemo saepe?
+        
           
     
 

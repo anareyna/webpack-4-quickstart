@@ -9,3 +9,9 @@
         @content
     }
 }
+
+@mixin from-tablet() {
+    @include from('m') {
+        @content
+    }
+}

@@ -1,0 +1,38 @@
+.how-it-works__title {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.how-it-works__subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}    
+
+.how-it-works__boxes {
+    text-align: center;
+}
+
+.how-it-works__box {
+    margin: 50px 0;
+}
+
+.how-it-works__description {
+    line-height: 1.5;
+}
+
+@include from('m') {
+    .how-it-works__title {
+        text-align: center;
+    }
+
+    .how-it-works__boxes {
+        display: flex;
+        align-items: center; 
+    }
+
+    .how-it-works__box {
+        padding: 0 1rem;
+        margin: 0;
+    }
+}

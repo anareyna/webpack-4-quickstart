@@ -3,7 +3,7 @@
     position: fixed;
     width: 100%;
     z-index: 1;
-    background: white;
+    background-color: whitesmoke;
     top: 0;
 }
 .header .container {
@@ -18,4 +18,24 @@
 }
 .header__ca-logo {
      width: 100%;
+}
+.header__btn {
+    display: none;
+}
+.header__visit-website {
+    display: none;
+}
+
+.header__brand-logo {
+    display: none;
+}
+
+
+@include from('m') {
+    .header {
+        background-color: white;
+    }
+    .header__btn, .header__visit-website, .header__brand-logo {
+        display: initial;
+    }
 }

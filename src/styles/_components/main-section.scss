@@ -1,12 +1,8 @@
 .main-section {
-    background-image: url('../assets/images/banner-bg.jpg');
     padding: 20px 0;
-    min-height: 480px;
     position: relative;
 }
-.main-section__text {
-    width: 60% 
-}
+
 .main-section__title {
     font-size: 3rem;
     line-height: 1.2;
@@ -20,11 +16,23 @@
     font-weight: normal;
 }
 
-.main-section__bottom-text {
-    bottom: 0px;
-    position: absolute;
-    line-height: 1.7;
-}
 .main-section__detail {
     display: block;
 }
+
+@include from('m') {
+    .main-section {
+        min-height: 480px;
+        background-image: url('../assets/images/banner-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .main-section__text {
+        width: 60% 
+    }
+    .main-section__bottom-text {
+        bottom: 0px;
+        position: absolute;
+        line-height: 1.7;
+    }
+  }

@@ -16,20 +16,5 @@
 @import '_components/main-section.scss';
 @import '_components/top-companies.scss';
 @import '_components/top-brand.scss';
-
-
-body {
-    @include tablet {
-        color: red;
-    }
-    @include mobile {
-        color: green;
-    }
-}
-
-
-.row--flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+@import '_components/how-it-works.scss';
+@import '_components/how-we-choose.scss';

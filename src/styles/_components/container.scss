@@ -1,6 +1,18 @@
 .container {
-    min-width: $wrapper-width;
-    max-width: $wrapper-width;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 1rem;
+}
+
+@include from('m') {
+    .container {
+        max-width: $wrapper-width;
+    }
+}
+
+@include from('xl') {
+    .container {
+        padding: 0;
+    }
 }
