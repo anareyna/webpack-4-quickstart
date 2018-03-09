@@ -4,6 +4,5 @@
 // window.myPackage = {
 //   greet,
 // }
-
 require('../styles/main.scss')
-
+require('../styles/main.scss')

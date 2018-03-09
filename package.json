@@ -4,8 +4,16 @@
   "description": "> Webpack 4 tutorial: All You Need to Know, from 0 Conf to Production Mode",
   "main": "index.js",
   "scripts": {
+    "precommit": "lint-staged",
     "dev": "webpack-dev-server --mode development ./src/scripts/index.js --open",
     "build": "webpack --mode production ./src/scripts/index.js"
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,css,md}": [
+      "eslint",
+      "prettier --write",
+      "git add"
+    ]
   },
   "keywords": [],
   "devDependencies": {
@@ -22,8 +30,11 @@
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.0.4",
+    "husky": "^0.14.3",
     "image-webpack-loader": "^4.1.0",
+    "lint-staged": "^7.0.0",
     "node-sass": "^4.7.2",
+    "prettier": "^1.11.1",
     "pug": "^2.0.0-rc.4",
     "pug-loader": "https://github.com/pugjs/pug-loader/tarball/master",
     "sass-loader": "^6.0.7",

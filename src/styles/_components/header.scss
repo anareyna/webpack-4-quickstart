@@ -4,10 +4,7 @@
     width: 100%;
     z-index: 1;
     background-color: whitesmoke;
-    top: 0;
-    @include mobile {
-        background-color: red
-    }    
+    top: 0;   
 }
 .header .container {
     display: flex;
