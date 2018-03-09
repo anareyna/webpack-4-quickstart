@@ -1,12 +1,12 @@
 extends layout-blocks/layout.pug
 block content
-  section.main-section 
+  section.hero 
     .container 
-      .main-section__text
-        h2.main-section__title 6 of the most trusted home alarm systems
-        p.main-section__description You work hard to provide for your family and protect the ones you love. Installing a home security system is an easy way to secure your home even when you're not there. But how do you know which alarm company to use? We compared installation types, contract terms, monitoring fees and plan options to help you choose the best home security system for your needs.
-        p.main-section__bottom-text Last updated: March 1, 2018 
-          span.main-section__detail "Disclosure"
+      .hero__text
+        h2.hero__title 6 of the most trusted home alarm systems
+        p.hero__description You work hard to provide for your family and protect the ones you love. Installing a home security system is an easy way to secure your home even when you're not there. But how do you know which alarm company to use? We compared installation types, contract terms, monitoring fees and plan options to help you choose the best home security system for your needs.
+        p.hero__bottom-text Last updated: March 1, 2018 
+          span.hero__detail "Disclosure"
   section.how-we-choose 
     .container 
       h3.how-we-choose__title How we choose the best
@@ -18,7 +18,14 @@ block content
             .how-we-choose__box-details
               p.how-we-choose__box-number 283
               p.how-we-choose__box-description Companies considered
-        
+  section.featured 
+    .container 
+      h3.featured__title Featured Products
+      .featured__slider
+        img.featured__img(src="http://placehold.it/300x200")
+        p.featured__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quaerat dolores tempore alias eaque, ex ipsa cupiditate dicta voluptas cumque veritatis error consectetur rerum.
+        a.featured__btn.btn(href="javascript:;") Order Now
+
   section.top-companies 
     .container 
       //- p.top-companies__featured-text  Featured in: 

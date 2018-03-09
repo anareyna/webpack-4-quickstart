@@ -1,0 +1,17 @@
+.featured {
+    text-align: center; 
+    padding: 20px 0;
+}
+.featured__title {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+
+@include tablet {
+    .featured__description {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,36 +1,36 @@
-.main-section {
+.hero {
     padding: 20px 0;
     position: relative;
 }
 
-.main-section__title {
+.hero__title {
     font-size: 3rem;
     line-height: 1.2;
     color: $brand-color;
     font-weight: normal;
 }
-.main-section__description {
+.hero__description {
     color: black;
     font-size: 1.2rem;
     line-height: 1.7;
     font-weight: normal;
 }
 
-.main-section__detail {
+.hero__detail {
     display: block;
 }
 
 @include tablet {
-    .main-section {
+    .hero {
         min-height: 480px;
         background-image: url('../assets/images/banner-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .main-section__text {
+    .hero__text {
         width: 60% 
     }
-    .main-section__bottom-text {
+    .hero__bottom-text {
         bottom: 0px;
         position: absolute;
         line-height: 1.7;
