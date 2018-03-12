@@ -1,0 +1,38 @@
+.accordion {
+    margin: 10px 0;
+}
+
+.accordion__header {
+    background-color: $bg-color;
+    padding: 10px;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    &:after {
+        content: '〉';
+        font-weight: normal;
+        position: absolute;
+        right: 10px;
+        top: 60%;
+        transform: translateY(-50%) rotate(90deg);
+        transition: 0.3s all ease;
+        
+    }
+    .accordion.is-collapsed & {
+        &:after {
+            transform: translateY(-90%) rotate(-90deg);
+            transition: 0.3s all ease;
+            
+        }
+    }
+}
+.accordion__body {
+    padding: 0 10px;
+    max-height: 500px;
+    transition: 0.2s all ease;
+    .accordion.is-collapsed & {
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.2s all ease;
+    }    
+}
