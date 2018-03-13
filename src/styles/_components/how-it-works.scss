@@ -29,10 +29,18 @@
     .how-it-works__boxes {
         display: flex;
         align-items: center; 
+        flex-wrap: wrap;
     }
 
     .how-it-works__box {
         padding: 0 1rem;
         margin: 0;
+        flex-basis: 50%;
     }
+}
+
+@include desktop {
+    .how-it-works__boxes {
+        flex-wrap: nowrap;
+    }    
 }

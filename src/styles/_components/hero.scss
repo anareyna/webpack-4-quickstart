@@ -26,9 +26,10 @@
         background-image: url('../assets/images/banner-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: left bottom;
     }
     .hero__text {
-        width: 60% 
+        max-width: 650px;
     }
     .hero__bottom-text {
         bottom: 0px;

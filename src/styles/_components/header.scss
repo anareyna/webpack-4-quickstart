@@ -1,5 +1,5 @@
 .header {
-    padding: 10px 0;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -12,9 +12,8 @@
     align-items: center;
 }
 .header__ca-logo-link {
-    max-width: 360px;
+    max-width: 200px;
     display: block;
-    margin-right: 100px;
 }
 .header__ca-logo {
      width: 100%;
@@ -30,12 +29,30 @@
     display: none;
 }
 
-
-@include tablet {
+@include desktop {
     .header {
         background-color: white;
+        padding: 10px 0;
     }
-    .header__btn, .header__visit-website, .header__brand-logo {
+    .header__ca-logo-link {
+        margin-right: 20px;
+        max-width: 300px;
+        
+    }    
+    .header__btn, .header__brand-logo {
         display: initial;
+    }
+    .header__brand-logo  {
+        margin-right: 20px;
+    }
+}
+@include widescreen {
+    .header__ca-logo-link {
+        margin-right: 100px;    
+    }
+    .header__visit-website {
+        display: initial;
+        margin-left: 20px;
+        text-align: center;
     }
 }
