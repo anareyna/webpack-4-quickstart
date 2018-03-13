@@ -21,10 +21,12 @@ block content
   section.featured 
     .container 
       h3.featured__title Featured Products
-      .featured__slider
-        img.featured__img(src="http://placehold.it/300x200")
-        p.featured__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quaerat dolores tempore alias eaque, ex ipsa cupiditate dicta voluptas cumque veritatis error consectetur rerum.
-        a.featured__btn.btn(href="javascript:;") Order Now
+      .slider.js-slider
+        - for(var i = 0; i<4; i++)
+          .slider-item
+            img.featured__img(src="http://placehold.it/300x200")
+            p.featured__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quaerat dolores tempore alias eaque, ex ipsa cupiditate dicta voluptas cumque veritatis error consectetur rerum.
+            a.featured__btn.btn(href="javascript:;") Order Now
 
   section.top-companies 
     .container 
