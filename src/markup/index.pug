@@ -74,19 +74,13 @@ block content
             p.how-it-works__description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta in ab maxime rem doloremque deserunt possimus laboriosam nemo saepe?
   section.faq
     .container
-      
-      .accordion.js-accordion
-        h4.accordion__header How many cameras do I need? 1
-        .accordion__body 
-          p.accordion__content 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, nesciunt consequuntur eos dignissimos id veniam quis enim, quaerat, inventore rerum autem possimus dolores doloremque fuga soluta blanditiis eius alias! Voluptatibus.
-      .accordion.js-accordion.is-collapsed
-        h4.accordion__header How many cameras do I need? 2
-        .accordion__body 
-          p.accordion__content 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, nesciunt consequuntur eos dignissimos id veniam quis enim, quaerat, inventore rerum autem possimus dolores doloremque fuga soluta blanditiis eius alias! Voluptatibus.
-
+      h3.faq__title Customers questions and answers
+      - for(var i = 0; i<6; i++)
+        .accordion.js-accordion
+          h4.accordion__header How many cameras do I need?
+          .accordion__body 
+            p.accordion__content 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, nesciunt consequuntur eos dignissimos id veniam quis enim, quaerat, inventore rerum autem possimus dolores doloremque fuga soluta blanditiis eius alias! Voluptatibus.
         
-          
-  
 
 
     

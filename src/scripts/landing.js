@@ -32,20 +32,15 @@ export default class Landing {
     /* eslint-disable no-unused-vars */
     let forEach = function(array, callback, scope) {
       for (let i = 0; i < array.length; i++) {
-        callback.call(scope, i, array[i]) // passes back stuff we need
+        callback.call(scope, i, array[i])
       }
     }
 
     let sliders = document.querySelectorAll('.js-slider')
     forEach(sliders, function(index, value) {
-      // now fetch YOUR-SLUG from html (use value.getAttribute('data-name') for < IE10 support)
-      let thumbnail = value.dataset.name
       let slider = tns({
         container: value,
-        navContainer: '.thumbnails-' + thumbnail,
-        navAsThumbnails: true,
         mouseDrag: true,
-        // more options ..
       })
     })
   }

@@ -3,7 +3,7 @@
 }
 
 .accordion__header {
-    background-color: $bg-color;
+    background-color: darken($bg-color, 5%);
     padding: 10px;
     position: relative;
     margin: 0;

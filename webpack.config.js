@@ -1,4 +1,4 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin")
+const HtmlWebPackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const WebpackNotifierPlugin = require('webpack-notifier')
 
@@ -12,30 +12,32 @@ module.exports = {
             {
               loader: 'css-loader',
               options: {
-                minimize: true
-              }
+                minimize: true,
+              },
             },
             {
-              loader: 'sass-loader'
-            }],
+              loader: 'sass-loader',
+            },
+          ],
           fallback: 'style-loader',
-          allChunks: true
-        })
+          allChunks: true,
+        }),
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ["babel-loader", "eslint-loader"]
+        use: ['babel-loader', 'eslint-loader'],
       },
       {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader",
-            options: { minimize: true }
-          }
-        ]
+            loader: 'html-loader',
+            options: { minimize: true },
+          },
+        ],
       },
+      { test: /\.svg$/, loader: 'raw-loader' },
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
         use: [
@@ -45,7 +47,7 @@ module.exports = {
             options: {
               mozjpeg: {
                 progressive: true,
-                quality: 65
+                quality: 65,
               },
               // optipng.enabled: false will disable optipng
               optipng: {
@@ -53,37 +55,37 @@ module.exports = {
               },
               pngquant: {
                 quality: '65-90',
-                speed: 4
+                speed: 4,
               },
               gifsicle: {
                 interlaced: false,
               },
               // the webp option will enable WEBP
               webp: {
-                quality: 75
-              }
-            }
+                quality: 75,
+              },
+            },
           },
         ],
       },
       {
-        test: /\.pug$/, 
+        test: /\.pug$/,
         use: {
           loader: 'pug-loader',
-          query: {} // Can be empty
-        }
-      }
-    ]
+          query: {}, // Can be empty
+        },
+      },
+    ],
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/markup/index.pug",
-      filename: "./index.html"
+      template: './src/markup/index.pug',
+      filename: './index.html',
     }),
     new ExtractTextPlugin('[name].css'),
     new WebpackNotifierPlugin({
       alwaysNotify: true,
-      skipFirstNotification: true
+      skipFirstNotification: true,
     }),
-  ]
-};
+  ],
+}
