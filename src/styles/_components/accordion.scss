@@ -1,5 +1,6 @@
 .accordion {
     margin: 10px 0;
+    transition: 0.2s all ease;    
 }
 
 .accordion__header {
@@ -29,7 +30,7 @@
 .accordion__body {
     padding: 0 10px;
     max-height: 500px;
-    transition: 0.2s all ease;
+    transition: 0.2s all ease;    
     .accordion.is-collapsed & {
         overflow: hidden;
         max-height: 0;

@@ -23,7 +23,7 @@
 @include tablet {
     .hero {
         min-height: 480px;
-        background-image: url('../assets/images/banner-bg.jpg');
+        background-image: url('~assets/images/banner-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left bottom;
