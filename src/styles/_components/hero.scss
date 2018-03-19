@@ -16,7 +16,7 @@
     font-weight: normal;
 }
 
-.hero__detail {
+.hero__disclosure {
     display: block;
 }
 
@@ -31,9 +31,9 @@
     .hero__text {
         max-width: 650px;
     }
-    .hero__bottom-text {
-        bottom: 0px;
-        position: absolute;
-        line-height: 1.7;
-    }
+    // .hero__last-updated {
+    //     bottom: 0px;
+    //     position: absolute;
+    //     line-height: 1.7;
+    // }
   }

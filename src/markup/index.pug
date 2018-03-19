@@ -1,12 +1,12 @@
 extends layout-blocks/layout.pug
 block content
-  section.hero 
+  section.hero(style="background-image: url('assets/images/banner-bg.jpg');") 
     .container 
       .hero__text
         h2.hero__title 6 of the most trusted home alarm systems
+        p.hero__last-updated Last updated: March 1, 2018 
         p.hero__description You work hard to provide for your family and protect the ones you love. Installing a home security system is an easy way to secure your home even when you're not there. But how do you know which alarm company to use? We compared installation types, contract terms, monitoring fees and plan options to help you choose the best home security system for your needs.
-        p.hero__bottom-text Last updated: March 1, 2018 
-          span.hero__detail "Disclosure"
+        span.hero__disclosure "Disclosure"
   section.how-we-choose 
     .container 
       h3.how-we-choose__title How we choose the best
@@ -40,7 +40,7 @@ block content
       //-   img.top-companies__featured-logo(src=require("assets/images/aarp-logo.png"))
       //-   img.top-companies__featured-logo(src=require("assets/images/forbes-logo.png"))
       
-      h3.title Top 6 Home Alarm Companies 
+      h3.content__title Top 6 Home Alarm Companies 
 
       - for(var i = 0; i<5; i++)
         .top-brand
@@ -63,6 +63,20 @@ block content
             p.top-brand__call-text Call Frontpoint 
             a.top-brand__cta-btn.btn.btn--large(href="javascript:;") (833) 851-3035
             a.top-brand__cta-link.link(href="javascript:;") Visit Website
+  
+  section.container 
+      h3.content__title Common questions about home security systems and alarm monitoring 
+      h4.content__subtitle How much do alarm systems cost?
+      p.content__text For many people, the price of a home security system is one of the most important factors in deciding which alarm system to purchase. There are four basic elements to consider: upfront (installation) costs, ongoing (monthly) subscription costs, equipment costs and municipal fees. Be aware that many home insurance providers offer discounts (up to 20 percent) for homes with monitored alarm systems.
+      .content__table 
+        .content__table-row 
+          .content__table-title Upfront Cost:
+          .content__table-description 
+            p.content__text Installation is either professional or do-it-yourself (DIY); some companies let you choose an installation method, while others offer only one option. Professional installation costs can run $100-$500+; DIY is free, but it requires more of the consumer’s time.
+        .content__table-row 
+          .content__table-title Subscription cost:
+          .content__table-description 
+            p.content__text Subscription security systems – home alarms monitored 24/7 by outside companies – carry a monthly fee, usually in the $20-$60 range.
   section.how-it-works 
     .container 
       h3.how-it-works__title Here is how it works
@@ -72,6 +86,15 @@ block content
             span.how-it-works__icon [check]
             p.how-it-works__subtitle We listen 
             p.how-it-works__description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta in ab maxime rem doloremque deserunt possimus laboriosam nemo saepe?
+  section.newsletter 
+    .container 
+      .newsletter__box 
+        img.newsletter__logo(src=require("assets/images/logo-inverted.png"))
+        p.newsletter__description Stay on top of recalls, news, and brands offers with the ConsumerAffairs newsletter
+        form.newsletter__form 
+          .newsletter__form-control 
+            input.newsletter__form-input(type="text")
+          button.newsletter__form-btn.btn.btn--secondary Sign Up Now
   section.faq
     .container
       h3.faq__title Customers questions and answers

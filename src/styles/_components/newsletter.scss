@@ -1,0 +1,33 @@
+.newsletter__box {
+    background-color: $brand-color;
+    text-align: center;
+    padding: 50px 30px;
+    color: white;
+}
+
+.newsletter__logo {
+    width: 100%;
+}
+
+.newsletter__form-control {
+    margin: 20px 0;
+}
+.newsletter__form-input {
+    border: none;
+    padding: 12px;
+    width: 100%
+}
+
+@include tablet {
+    .newsletter__logo {
+        max-width: 500px;
+    }    
+    .newsletter__description {
+        font-size: 1.7rem;
+    }
+    .newsletter__form-input {
+        padding: 15px;
+        max-width: 50%
+    }
+    
+}

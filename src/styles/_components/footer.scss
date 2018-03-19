@@ -1,10 +1,17 @@
 .footer {
-    background-color: darken(whitesmoke, 40%);
+    background-color: rgba(53,53,53,1);
     padding: 40px 0;
     color: white;
+    text-align: center;
+    font-size: .8rem;
+    line-height: 1.5;
 }
 .footer__logo {
     display: block;
     max-width: 300px;
+    margin-bottom: 20px;
+}
+.footer__copyright {
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }

@@ -23,3 +23,11 @@
     padding: 18px 60px;
     font-size: 1.4rem;
 }
+
+.btn--secondary {
+    background-color: $link-color;
+    &:hover {
+        transition: 0.3s all ease;
+        background-color: darken($link-color, 10%);
+    }
+}
