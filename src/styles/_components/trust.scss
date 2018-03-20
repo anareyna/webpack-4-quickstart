@@ -1,0 +1,63 @@
+.trust {
+    background-image: url('~assets/images/homealarm-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;    
+}
+.trust__overlay {
+    background-color: rgba(255,255,255,0.83);
+    padding: 50px;
+}
+.trust__title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: 0;
+    text-align: center
+}
+
+.trust__subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}    
+
+.trust__boxes {
+    text-align: center;
+}
+
+.trust__box {
+    margin: 50px 0;
+}
+
+.trust__description {
+    line-height: 1.5;
+}
+
+@include tablet {
+    .trust__title {
+        text-align: center;
+        font-size: 2.4rem;    
+    }
+    .trust__overlay {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .trust__boxes {
+        display: flex;
+        align-items: center; 
+        flex-wrap: wrap;
+    }
+
+    .trust__box {
+        padding: 0 1rem;
+        margin: 0;
+        flex-basis: 50%;
+    }
+}
+
+@include desktop {
+    .trust__boxes {
+        flex-wrap: nowrap;
+    }    
+}

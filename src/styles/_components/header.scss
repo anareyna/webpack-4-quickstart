@@ -42,6 +42,9 @@
     .header__btn, .header__brand-logo {
         display: initial;
     }
+    .header__btn {
+        white-space: pre;
+    }
     .header__brand-logo  {
         margin-right: 20px;
     }
