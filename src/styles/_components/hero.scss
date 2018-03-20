@@ -23,6 +23,12 @@
     font-size: 0.8rem;
 }
 
+@include mobile {
+    .hero {
+        background-image: none !important
+    }
+}
+
 @include tablet {
     .hero {
         min-height: 480px;

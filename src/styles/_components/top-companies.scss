@@ -17,13 +17,13 @@
 }
 
 .top-companies__featured-logo {
-    max-height: 35px;
+    max-height: 25px;
+    margin: 5px 10px;
 }
 
 @include tablet {
-    .top-companies__featured {
-        justify-content: space-between;
-        flex-wrap: nowrap;
+    .top-companies__featured-logo {
+        max-height: 35px;
     }
     
 }
