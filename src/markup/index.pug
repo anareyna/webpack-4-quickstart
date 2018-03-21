@@ -216,8 +216,8 @@ block content
         p.newsletter__description Stay on top of recalls, news, and brands offers with the ConsumerAffairs newsletter
         form.newsletter__form 
           .newsletter__form-control 
-            input.newsletter__form-input(type="text")
-          button.newsletter__form-btn.btn.btn--secondary Sign Up Now
+            input.newsletter__form-input(id="txtNewsletterEmail" type="email" placeholder="Email" required)
+          button.newsletter__form-btn.btn.btn--secondary(id="btnNewsletter") Sign Up Now
   section.faq
     .container
       h3.faq__title Customers questions and answers

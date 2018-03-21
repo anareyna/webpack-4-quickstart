@@ -40,6 +40,7 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.2",
     "tiny-slider": "^2.6.0",
+    "validate-js": "^2.0.1",
     "webpack": "^4.0.0",
     "webpack-cli": "^2.0.10",
     "webpack-dev-server": "^3.1.0",
