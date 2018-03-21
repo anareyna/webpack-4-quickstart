@@ -27,7 +27,7 @@ block content
             img.featured__img(src="http://placehold.it/300x200")
             p.featured__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quaerat dolores tempore alias eaque, ex ipsa cupiditate dicta voluptas cumque veritatis error consectetur rerum.
             a.featured__btn.btn(href="javascript:;") Order Now
-
+  
   section.top-companies 
     .container 
       p.top-companies__featured-text  Featured in: 
@@ -173,6 +173,7 @@ block content
           .trust__box 
             img.trust__icon(src=require("assets/images/trust-headphone.png"))
             p.trust__description Our moderators read all reviews to verify quality and helpfulness.
+
   section.how-it-works 
     .container 
       h3.how-it-works__title Here is how it works
@@ -182,6 +183,28 @@ block content
             span.how-it-works__icon [check]
             p.how-it-works__subtitle We listen 
             p.how-it-works__description Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta in ab maxime rem doloremque deserunt possimus laboriosam nemo saepe?
+
+  section.reviews 
+    .container 
+      .reviews__row
+        h3.reviews__title Why is Frontpoint the "#1"?
+        .reviews__layout
+          .reviews__brand
+            .top-brand
+              .top-brand__main 
+                img.top-brand__logo(src=require("assets/images/frontpoint-logo.png"))
+                a.top-brand__cta-btn.btn.btn--large(href="javascript:;") (833) 851-3035
+                a.top-brand__cta-link.link(href="javascript:;") Visit Website
+              .top-brand__features 
+                p.reviews__text Frontpoint does home security differently. By offering complete protection coupled with truly genuine and helpful service, Frontpoint gives customers everything they need and nothing they don’t. All Frontpoint customers get a personalized security solution designed to not only make them feel safe, but feel good, as well.
+                
+          .reviews__featured
+            p.reviews__text "Installing my Frontpoint system was very easy. The instructions were good. Frontpoint also has a topnotch customer service. Anytime that I’ve had to call, they’ve been really, really good. I would recommend them."
+            .reviews__details 
+                img.reviews__stars(src=require("assets/images/stars-5.png"))
+                p.reviews__name Rick Brouse, FL
+            p.reviews__verified Verified Reviewer
+            
   section.newsletter 
     .container 
       .newsletter__box 
@@ -194,7 +217,7 @@ block content
   section.faq
     .container
       h3.faq__title Customers questions and answers
-      - for(var i = 0; i<6; i++)
+      - for(var i = 0; i<2; i++)
         .accordion.js-accordion
           h4.accordion__header How many cameras do I need?
           .accordion__body 
