@@ -13,6 +13,16 @@
         margin-bottom: 20px;
     }
 }
+
+.reviews__row {
+    &:nth-child(1) {
+        .reviews__featured-title {
+            display: initial
+        }
+        
+    }
+}
+
 .reviews__title {
     font-size: 1.5rem;
     margin-bottom: 0;
@@ -24,6 +34,15 @@
     line-height: 1.5;
 }
 .reviews__featured {
+    display: none;
+    position: relative;
+}
+.reviews__featured-title {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    font-size: 1.5rem;
+    margin: 0;
     display: none;
 }
 
