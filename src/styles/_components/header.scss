@@ -3,7 +3,7 @@
     position: fixed;
     width: 100%;
     z-index: 1;
-    background-color: whitesmoke;
+    background-color: white;
     top: 0;   
 }
 .header .container {
@@ -12,36 +12,56 @@
     align-items: center;
 }
 .header__ca-logo-link {
-    max-width: 200px;
     display: block;
 }
-.header__ca-logo {
-     width: 100%;
-}
-.header__btn {
-    display: none;
-}
+
 .header__visit-website {
     display: none;
 }
 
-.header__brand-logo {
-    display: none;
+
+@include mobile {
+    .header {
+        padding: 10px 0;
+    }    
+    .header .container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .header__ca-logo-link {
+        width: 100%;
+        flex-grow: 1;
+        flex-shrink: 0;
+        text-align: center;
+        
+    }
+    .header__ca-logo {
+         width: 200px;
+         margin: auto;
+         text-align: center;
+    }
+    .header__btn {
+        padding: 10px 15px;
+        font-weight: normal;
+    }
+    .header__brand-logo {
+        width: 130px;
+        margin: 0 20px;
+    }
 }
 
 @include desktop {
     .header {
-        background-color: white;
         padding: 10px 0;
     }
+    .header__ca-logo {
+        width: 100%;
+    }    
     .header__ca-logo-link {
         margin-right: 20px;
-        max-width: 300px;
+        max-width: 350px;
         
     }    
-    .header__btn, .header__brand-logo {
-        display: initial;
-    }
     .header__btn {
         white-space: pre;
     }
