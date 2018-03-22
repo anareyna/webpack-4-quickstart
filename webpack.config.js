@@ -78,6 +78,9 @@ module.exports = {
       assets: path.resolve(__dirname, 'src/assets/'),
     },
   },
+  node: {
+    fs: 'empty'
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: './src/markup/index.pug',

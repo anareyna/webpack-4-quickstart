@@ -18,7 +18,13 @@
 .newsletter__form-input {
     border: none;
     padding: 12px;
-    width: 100%
+    width: 100%;
+    // &:valid {
+    //     background-color: $green-color;
+    // }
+    // &:invalid {
+    //     background-color: pink;        
+    // }
 }
 
 @include tablet {

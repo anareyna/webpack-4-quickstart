@@ -1,10 +1,10 @@
 import '../styles/main.scss'
 
 import Landing from './landing'
-import Sailthru from './sailthru'
+// import Sailthru from './sailthru'
 
 const landing = new Landing()
-const sailthru = new Sailthru()
+// const sailthru = new Sailthru()
 
 landing.init()
-sailthru.init()
+// sailthru.init()
