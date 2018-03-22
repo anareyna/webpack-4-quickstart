@@ -14,13 +14,48 @@ $slicer-breakpoint-names:  'xs' 's' 'm' 'l' 'xl';
 // ==========================================================================
 // Color Palette
 // ==========================================================================
+$color-primary--blue: #0077C0;
+$color-primary--black: #0D0D0D;
+$color-primary--orange: #F56400;
+$color-primary--green: #0E9C3F;
+$color-primary--white: #FFFFFF;
+$color-primary--grey-dark: #3E3D3F;
+$color-primary--grey-light: #F5F5F5;
 
-$brand-color: #166aa2;
-$secondary-color: #2abff6;
-$link-color: #f96231;
-$dark-blue: #002e5c;
-$green-color: rgb(55, 158, 91);
-$bg-color: whitesmoke;
+$color-secondary--blue-regal: #005175;
+$color-secondary--jumbo: #777678;
+$color-secondary--grey-dark: #A6A6A6;
+$color-secondary--polar: #EAF6FA;
+$color-secondary--punch: #DA3535;
+$color-secondary--pearl-lusta: #FCF5DD;
+$color-secondary--tangerine-yellow: #FACB04;
+$color-secondary--cerulean: #006EA0;
+$color-secondary--blue-light: #1091CC;
+
+$color-hover--blue: #005487;
+$color-hover--tenne: #A63600;
+
+$color-social--facebook: #0077B6;
+$color-social--facebook-hover: #025C8C;
+$color-social--twitter: #3AA2F4;
+$color-social--twitter-hover: #2F78AF;
+$color-social--google: #D34836;
+$color-social--google-hover: #A63628;
+$color-social--linkedin: #0077B6;
+$color-social--linkedin-hover: #025C8C;
+$color-social--youtube: #CD201F;
+$color-social--youtube-hover: #9F0B0A;
+$color-social--pinterest: #BD081C;
+$color-social--pinterest-hover: #860C19;
+
+
+$brand-color: $color-primary--blue;
+$bg-color: $color-primary--grey-light;
+$btn-cta-color: $color-primary--orange;
+$btn-cta-color--hover: $color-hover--tenne;
+$visit-link-color: $color-primary--blue;
+$visit-link-color--hover: $color-hover--blue;
+$title-color: $color-secondary--blue-regal;
 
 // ==========================================================================
 // Spacing

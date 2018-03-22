@@ -1,5 +1,5 @@
 .btn {
-    background-color: $secondary-color;
+    background-color: $btn-cta-color;
     border: none;
     border-radius: $btn-border-radius;
     color: white;
@@ -13,21 +13,22 @@
     text-decoration: none;
     transition: 0.3s all ease;
     text-align: center;
+    font-weight: bold;
     &:hover {
         transition: 0.3s all ease;
-        background-color: darken($brand-color, 1%);
+        background-color: $btn-cta-color--hover;
     }
 }
 
 .btn--large {
-    padding: 18px 60px;
+    padding: 17px 60px;
     font-size: 1.4rem;
 }
 
 .btn--secondary {
-    background-color: $link-color;
+    background-color: $visit-link-color;
     &:hover {
         transition: 0.3s all ease;
-        background-color: darken($link-color, 10%);
+        background-color: darken($visit-link-color, 10%);
     }
 }

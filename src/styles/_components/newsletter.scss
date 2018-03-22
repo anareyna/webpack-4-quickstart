@@ -20,7 +20,7 @@
     padding: 12px;
     width: 100%;
     // &:valid {
-    //     background-color: $green-color;
+    //     background-color: lighten($color-primary--green,40%);
     // }
     // &:invalid {
     //     background-color: pink;        
@@ -32,7 +32,7 @@
         max-width: 500px;
     }    
     .newsletter__description {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
     .newsletter__form-input {
         padding: 15px;

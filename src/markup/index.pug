@@ -1,13 +1,14 @@
 extends layout-blocks/layout.pug
 block content
-  section.hero(style="background-image: url('assets/images/banner-bg.jpg');") 
+  section.hero(style="background-image: url('https://d9hhrg4mnvzow.cloudfront.net/toprated.consumeraffairs.com/top-5-home-alarms/0f699a6a-mvp-hero-father-son-2.jpg');") 
     .container 
       .hero__text
         h2.hero__title 6 of the most trusted home alarm systems
         p.hero__last-updated Last updated: March 1, 2018 
         p.hero__description You work hard to provide for your family and protect the ones you love. Installing a home security system is an easy way to secure your home even when you're not there. But how do you know which alarm company to use? We compared installation types, contract terms, monitoring fees and plan options to help you choose the best home security system for your needs.
         span.hero__disclosure "Disclosure"
-  section.how-we-choose 
+
+  section.how-we-choose.u-hidden 
     .container 
       h3.how-we-choose__title How we choose the best
       p.how-we-choose__description We throughly researched plans, reputation installation ans more...
@@ -18,7 +19,8 @@ block content
             .how-we-choose__box-details
               p.how-we-choose__box-number 283
               p.how-we-choose__box-description Companies considered
-  section.featured 
+
+  section.featured.u-hidden 
     .container 
       h3.featured__title Featured Products
       .slider.js-slider
@@ -46,10 +48,10 @@ block content
         .top-brand
           span.top-brand__number #1
           .top-brand__main 
-            p.top-brand__name Frontpoint 
+            //- p.top-brand__name Frontpoint 
             img.top-brand__logo(src=require("assets/images/frontpoint-logo.png"))
             img.top-brand__stars(src=require("assets/images/five-stars.png"))
-            a.top-brand__link(href="javascript:;" target="_blank") READ REVIEWS
+            //- a.top-brand__link(href="javascript:;" target="_blank") READ REVIEWS
           .top-brand__features 
             p.top-brand__subtitle Features
               ul.top-brand__list 
@@ -104,7 +106,7 @@ block content
           .content__table-title Contract portability:
           .content__table-description 
             p.content__text Many alarm system companies make it easy to transfer your equipment to a new home, so if there's a chance you'll move during your contract, check first to confirm relocation possibilities.
-      img(src=require("assets/images/homealarm-bg.jpg") width="100%")
+      //- img(src=require("assets/images/homealarm-bg.jpg") width="100%")
 
       h4.content__subtitle Who installs home security systems?
       p.content__text There are two basic installation options you can choose: professional installation and DIY. If you're thinking about purchasing a wireless home security system, you'll usually have the option to set it up yourself or hire a professional to do it for you. Most hardwired systems, however, require professional installation.
@@ -217,8 +219,9 @@ block content
         form.newsletter__form 
           .newsletter__form-control 
             input.newsletter__form-input(id="txtNewsletterEmail" type="email" placeholder="Email" name="email" required)
-          button.newsletter__form-btn.btn.btn--secondary(id="btnNewsletter") Sign Up Now
-  section.faq
+          button.newsletter__form-btn.btn.btn--large(id="btnNewsletter") Sign Up Now
+
+  section.faq.u-hidden
     .container
       h3.faq__title Customers questions and answers
       - for(var i = 0; i<2; i++)

@@ -1,8 +1,14 @@
 .link {
-    color: $link-color;
+    color: $visit-link-color;
     font-family: $family-2;
     font-weight: bold;
     padding-bottom: 4px;
-    border-bottom: 2px solid $link-color;
+    border-bottom: 2px solid $visit-link-color;
     text-decoration: none;
+    transition: 0.3s all ease;
+    &:hover {
+        color: $visit-link-color--hover;
+        transition: 0.3s all ease;
+        border-color: $visit-link-color--hover;
+    }
 }
