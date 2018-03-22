@@ -6,6 +6,14 @@ html(lang="en-us")
     meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1.0")
     meta(name="description", content="")
     meta(name="robots", content="noindex")
+    script(async src="https://www.googletagmanager.com/gtag/js")
+    script. 
+      // Google
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-12322096-15');
+      gtag('config', 'AW-947960761');
   body
     include header.pug
     block content

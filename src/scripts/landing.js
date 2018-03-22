@@ -10,6 +10,7 @@ export default class Landing {
   /**
    * @constructor
    */
+
   constructor() {
     this._accordions = document.querySelectorAll('.js-accordion')
   }
